@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Nunito:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    text-decoration: none;
+    scroll-behavior: smooth;   
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    text-shadow: 0 0 10px lightblue;
+}
+
+.container-bg{
+    color: #000;
+    padding: 100px;
+}
+
+.container{
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container span{
+    border-radius: 50%;
+    padding: 40px;
+}
+
+.botoes{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+.botoes button{
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+    background-color: tomato;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.botoes button:nth-child(1){
+    background-color: lightgreen;
+}
+
+.botoes button:hover{
+    color: darkgray;
+}
+
+.blue{
+    background-color: lightblue;
+    animation: blue 0.33s infinite alternate-reverse;
+}
+
+.yellow{
+    background-color: lightyellow;
+    animation: yellow 0.33s infinite alternate;
+}
+
+.green{
+    background-color: lightgreen;
+    animation: green 0.33s infinite alternate-reverse;
+}
+
+.red{
+    background-color: lightcoral;
+    animation: red 0.33s infinite alternate;
+}
+
+@keyframes blue{
+    from {
+        box-shadow: 0 0 10px -10px lightblue;
+    }
+    to {
+        box-shadow: 0 0 10px 10px darkcyan;
+    }
+}
+
+@keyframes yellow{
+    from {
+        box-shadow: 0 0 10px -10px lightyellow;
+    }
+    to {
+        box-shadow: 0 0 10px 10px gold;
+    }
+}
+
+@keyframes green{
+    from {
+        box-shadow: 0 0 10px -10px lightgreen;
+    }
+    to {
+        box-shadow: 0 0 10px 10px green;
+    }
+}
+
+@keyframes red{
+    from {
+        box-shadow: 0 0 10px -10px lightcoral;
+    }
+    to {
+        box-shadow: 0 0 10px 10px tomato;
+    }
+}
