@@ -15,7 +15,7 @@ function desligar() {
     }
 }
 
-vel.addEventListener('mouseup', alterar);
+vel.addEventListener('change', alterar);
 function alterar(){
     for (let i = 0; i < circles.length; i++) {
         var aux = vel.value / 3;

@@ -121,3 +121,10 @@ h1{
         box-shadow: 0 0 10px 10px tomato;
     }
 }
+
+@media (max-width: 600px)
+{
+  .botoes form{
+      padding-top: 20px;
+  }
+}
